@@ -180,7 +180,7 @@ class HierarchicalClassifier(BaseEstimator, ClassifierMixin, MetaEstimatorMixin)
         mlb_prediction_threshold=0.,
         use_decision_function=False,
     ):
-	self.estimators_ = {}
+        self.estimators_ = {}
         self.base_estimator = base_estimator
         self.class_hierarchy = class_hierarchy
         self.prediction_depth = prediction_depth
