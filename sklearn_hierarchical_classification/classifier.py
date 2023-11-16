@@ -570,7 +570,7 @@ class HierarchicalClassifier(BaseEstimator, ClassifierMixin, MetaEstimatorMixin)
         else:
             clf.fit(X=X_, y=y_)
             self.graph_.nodes[node_id][CLASSIFIER] = clf
-	self.estimators_[node_id] = clf
+        self.estimators_[node_id] = clf
 
     def _recursive_predict(self, x, root):  # noqa:C901 TODO: refactor
         if CLASSIFIER not in self.graph_.nodes[root]:
